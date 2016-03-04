@@ -1,6 +1,6 @@
 package com.company;
 
-/**
+/*
  * Created by Vontre on 2/29/2016.
  */
 public class Schedule {
@@ -16,9 +16,9 @@ public class Schedule {
         return (stuClass == null);
     }
 
-    public void insertFirstClass(String fName, String mInit, String lName, String pNumber)
+    public void insertFirstClass(String fName, String mInit, String lName, String pNumber, int choice)
     {
-        Student newStu = new Student(fName, mInit, lName, pNumber);
+        Student newStu = new Student(fName, mInit, lName, pNumber, choice);
         // Connects the fistLink field to the new Link
         newStu.next = stuClass;
 

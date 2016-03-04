@@ -1,7 +1,7 @@
 package com.company;
 import java.util.Timer;
 import java.util.Random;
-/**
+/*
  * Created by Vontre on 2/29/2016.
  */
 public class WaitingList {
@@ -14,7 +14,7 @@ public class WaitingList {
 
     public void setSchedule(String fN, String mI, String lN, String pNum)
     {
-        if(student.confirmation(choice) == 0)
+        if(student.confirmation() == 0)
         {
             System.out.println("Generating Schedule...");
             waiting();
@@ -43,13 +43,13 @@ public class WaitingList {
     public void classSet(String fN, String mI, String lN, String pNum)
     {
         Random rnd = new Random();
-        int randClass = rnd.nextInt(7) +1;
+        int randClass = rnd.nextInt(7) + 1;
 
         switch(randClass)
         {
             case 1:
-                System.out.println("Student Name:\n" + student.lName + ", " +  student.fName + " " + student.mInit + ".\n");
-                System.out.println("Student Email:\n" + student.lName + student.fName + "@SomeSchool.com\n");
+                System.out.println("Student Name:\n" + lN + ", " +  fN + " " + mI + ".\n");
+                System.out.println("Student Email:\n" + lN + fN + "@SomeSchool.com\n");
                 System.out.println("Schedule:\n\t Monday\t|| Tuesday\t|| Wednesday\t|| Thursday\n|| Friday |");
                 System.out.println("8:00 |\t CHEM110\t|| BIO101\t|| CHEM110\t|| BIO101\t|| CHEM110|");
                 System.out.println("9:00 |\t _______\t|| BIO101\t|| _______\t|| BIO101\t||  _____ |");
@@ -62,8 +62,8 @@ public class WaitingList {
                 System.out.println("4:00 |\t            \t||        \t||       \t||        \t||        |");
                 break;
             case 2:
-                System.out.println("Student Name:\n" + student.lName + ", " +  student.fName + " " + student.mInit + ".\n");
-                System.out.println("Student Email:\n" + student.lName + student.fName + "@SomeSchool.com\n");
+                System.out.println("Student Name:\n" + lN + ", " +  fN + " " + mI + ".\n");
+                System.out.println("Student Email:\n" + lN + fN + "@SomeSchool.com\n");
                 System.out.println("Schedule:\n\t Monday\t|| Tuesday\t|| Wednesday\t|| Thursday\n|| Friday |");
                 System.out.println("8:00 |\t PYSC220\t||       \t|| PSYC220\t||       \t|| PSYC220|");
                 System.out.println("9:00 |\t _______\t||  CS130\t|| _______\t||  CS130\t||  _____ |");
@@ -76,8 +76,8 @@ public class WaitingList {
                 System.out.println("4:00 |\t            \t||        \t||       \t||        \t||        |");
                 break;
             case 3:
-                System.out.println("Student Name:\n" + student.lName + ", " +  student.fName + " " + student.mInit + ".\n");
-                System.out.println("Student Email:\n" + student.lName + student.fName + "@SomeSchool.com\n");
+                System.out.println("Student Name:\n" + lN + ", " +  fN + " " + mI + ".\n");
+                System.out.println("Student Email:\n" + lN + fN + "@SomeSchool.com\n");
                 System.out.println("Schedule:\n\t Monday\t|| Tuesday\t|| Wednesday\t|| Thursday\n|| Friday |");
                 System.out.println("8:00 |\t CHEM110\t|| BIO101\t|| CHEM110\t|| BIO101\t|| CHEM110|");
                 System.out.println("9:00 |\t _______\t|| BIO101\t|| _______\t|| BIO101\t||  _____ |");
@@ -90,8 +90,8 @@ public class WaitingList {
                 System.out.println("4:00 |\t            \t||        \t||       \t||        \t||        |");
                 break;
             case 4:
-                System.out.println("Student Name:\n" + student.lName + ", " +  student.fName + " " + student.mInit + ".\n");
-                System.out.println("Student Email:\n" + student.lName + student.fName + "@SomeSchool.com\n");
+                System.out.println("Student Name:\n" + lN + ", " +  fN + " " + mI + ".\n");
+                System.out.println("Student Email:\n" + lN + fN + "@SomeSchool.com\n");
                 System.out.println("Schedule:\n\t Monday\t|| Tuesday\t|| Wednesday\t|| Thursday\n|| Friday |");
                 System.out.println("8:00 |\t CHEM110\t|| BIO101\t|| CHEM110\t|| BIO101\t|| CHEM110|");
                 System.out.println("9:00 |\t _______\t|| BIO101\t|| _______\t|| BIO101\t||  _____ |");
@@ -104,8 +104,8 @@ public class WaitingList {
                 System.out.println("4:00 |\t            \t||        \t||       \t||        \t||        |");
                 break;
             case 5:
-                System.out.println("Student Name:\n" + student.lName + ", " +  student.fName + " " + student.mInit + ".\n");
-                System.out.println("Student Email:\n" + student.lName + student.fName + "@SomeSchool.com\n");
+                System.out.println("Student Name:\n" + lN + ", " +  fN + " " + mI + ".\n");
+                System.out.println("Student Email:\n" + lN + fN + "@SomeSchool.com\n");
                 System.out.println("Schedule:\n\t Monday\t|| Tuesday\t|| Wednesday\t|| Thursday\n|| Friday |");
                 System.out.println("8:00 |\t CHEM110\t|| BIO101\t|| CHEM110\t|| BIO101\t|| CHEM110|");
                 System.out.println("9:00 |\t _______\t|| BIO101\t|| _______\t|| BIO101\t||  _____ |");

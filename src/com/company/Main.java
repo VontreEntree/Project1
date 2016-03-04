@@ -26,7 +26,7 @@ public class Main {
         //in.nextLine();
         stu.pNumber = in.nextLine();
 
-        stu.confirmation(choice);
+        stu.confirmation ();
         if(choice == 1)
         {
             System.out.println("Sorry For The Inconvenience,\nWe Hope You Finish The Application Soon.");
@@ -37,12 +37,10 @@ public class Main {
         {
 
             System.out.println("Great!");
-            stu.setFName(stu.fName);
-            stu.setMInit(stu.mInit);
-            stu.setLName(stu.lName);
-            stu.setNum(stu.pNumber);
-            schedule.insertFirstClass(stu.getFName(), stu.getMInit(), stu.getLName(), stu.getNum());
-            waitL.setSchedule(stu.fName, stu.mInit, stu.lName, stu.pNumber);
+
+            schedule.insertFirstClass(stu.getFName(), stu.getMInit(), stu.getLName(), stu.getNum(), stu.choice);
+            stu.studentInfo();
+            waitL.setSchedule(stu.getFName(), stu.getMInit(), stu.getLName(), stu.getNum());
         }
         else
         {
